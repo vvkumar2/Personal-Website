@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PRACTICE</title>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<style type="text/css">
+	*{
+		box-sizing: border-box;
+	}
+	html {
+		background-color: whitesmoke;
+	}
+	h1 {
+		color: #1c2e56;
+		position: relative;
+		top: 25px;
+  		left: 0px;
+  		font-size: 35px;
+		text-align: center;
+		display: block;
+		margin: 0px;
+		font-family: 'Montserrat';
+		font-weight: 600;
+		text-decoration: underline;
+	}
+	body {
+		color:  whitesmoke;
+		margin: 0;
+		padding: 0;
+	}
+	.text1 {
+		text-decoration: none;
+		position: absolute;
+		z-index: 1;
+		top: 9.5px;
+  		left: 40px;
+  		font-size: 35px;
+		text-align: center;
+		color: #fdf2e0;
+		display: block;
+		margin: 0px;
+		font-family: 'Montserrat';
+	}
+	.text1 a, .text1 a:link, .text1 a:visited, .text1 a:focus, .text1 a:hover, .text1 a:active {
+		text-decoration: none;
+		color: #fdf2e0;
+		cursor: pointer;
+	}
+	.header {
+		float: left;
+		font-size: 21px;
+		position:absolute;
+		color: #fdf2e0;
+		font-family: 'Montserrat';
+		top: 1.5px;
+	}
+	.header a, .header a:link, .header a:visited, .header a:focus, .header a:hover, .header a:active {
+		text-decoration: none;
+		color: #fdf2e0;
+		cursor: pointer;
+	}
+	.headerBox {
+		width: 1440px;
+		height: 60px;
+		z-index: -1;
+  		background-color: #1c2e56;
+  		position: relative;
+  		top:  0px;
+  		left: 0px;
+  		padding: 0px;
+  		margin: 0px;
+  		border-bottom: 1px solid #fdf2e0;
+	}
+	.photoHeader {
+		margin-bottom: 25px;
+	}
+	/*.footerBox {
+		width: 1440px;
+		height: 20px;
+		z-index: -1;
+  		background-color: #1c2e56;
+  		position: relative;
+  		top:  720px;
+  		left: 0px;
+  		padding: 0px;
+  		margin: 0px;
+	}*/
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0 4px;
+	}
+	.column {
+		flex: 25%;
+		max-width: 25%;
+		padding: 0 4px;
+	}
+	.column img {
+		margin-top: 8px;
+		vertical-align: middle;
+		width:  100%;
+	}
+	#last{
+		margin-bottom: 10px;
+	}
+	/* Responsive layout - makes a two column-layout instead of four columns */
+	@media screen and (max-width: 800px) {
+	  .column {
+	    flex: 50%;
+	    max-width: 50%;
+	  }
+	}
+
+	/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 600px) {
+	  .column {
+	    flex: 100%;
+	    max-width: 100%;
+	  }
+	}
+	</style>
+	
+</head>
+<body>
+	<h1 class = "text1"><a href = "vvkumar.html">VARUN KUMAR</a></h1>
+	<div>
+		<h2 class = "header" style = "left: 1070px;"><a href="vvkumar_photos.html">PHOTOS</a></h2>
+		<h2 class = "header" style = "left: 1220px;"> | </h2>
+		<h2 class = "header" style = "left: 1270px;"><a href="vvkumar_projects.html">PROJECTS</a></h2>
+	</div>
+
+	<div class = "headerBox"></div>
+	<div class = "footerBox"></div>
+
+	<h1 class = "photoHeader">Summer 2021</h1>
+	<div class="row"> 
+  		<div class="column">
+  			<img src="IMG_9151.jpg">
+    		<img src="IMG_9797.JPG">
+   		 	<img src="8B41EA4E-B127-49D0-8447-31AE41D3A2D1.JPEG">
+    		<img src="IMG_9440.jpg">
+    		<img src="IMG_1364.JPG">
+    		<img src="IMG_9437.jpg">
+    		<img id = "last" src="IMG_8563.JPG">
+  		</div>
+  		<div class="column">
+    		<img src="IMG_9182.jpg">
+   		 	<img src="IMG_9267.JPG">
+   		 	<img src="IMG_8826.JPG">
+    		<img src="IMG_8824.JPG">
+    		<img src="IMG_9153.jpg">
+    		<img id = "last" src="IMG_9064.jpg">
+  		</div>
+  		<div class="column">
+    		<img src="IMG_8845.JPG">
+   		 	<img src="IMG_8844.JPG">
+    		<img src="IMG_8795.JPG">
+    		<img src="028B84B3-6776-4968-91BF-AAE1F905ABC2.jpg">
+    		<img id = "last" src="74482766-619C-45AF-82E2-221DBE2036AF.JPEG">
+  		</div>
+  		<div class="column">
+  			<img src="IMG_9398.jpg">
+    		<img src="IMG_6214.jpg">
+   		 	<img src="IMG_9148.jpg">
+    		<img src="IMG_1097.JPG">
+    		<img src="CC79B8BD-3D37-41EF-9E3C-AE2AAD2C0CE2.jpg">
+    		<img id = "last" src="BBB58ED9-3701-4E53-8052-776290AD98F4.jpg">
+    		
+    		
+  		</div>
+	</div>
+
+	<h1 class = "photoHeader">UCLA Quarter 1</h1>
+	<div class="row"> 
+  		<div class="column">
+    		<img src="IMG_3295 2.JPG">
+   		 	<img src="IMG_1349.JPG">
+    		<img src="IMG_0426.JPG">
+    		<img src="IMG_1241.JPG">
+    		<img src="IMG_0650.JPG">
+    		<img id = "last" src="IMG_0407 2.JPG">
+  		</div>
+  		<div class="column">
+    		<img src="IMG_1026 2.JPG">
+    		<img src="66079674068__5BF4F6A9-EE7F-4F9E-B926-92969343320D 2.JPG">
+    		<img src="IMG_1023 2.JPG">
+    		<img src="IMG_1022.JPG">
+    		<img src="IMG_0902 2.JPG">
+    		<img id = "last" src="IMG_1081 2.JPG">
+  		</div>
+  		<div class="column">
+    		<img src="IMG_0501 3.JPG">
+    		<img src="IMG_1338 2.JPG">
+    		<img src="IMG_0334.JPG">
+    		<img src="IMG_0373 2.JPG">
+    		<img src="DSC_0408_Original.jpg">
+    		<img id = "last" src="IMG_0153 2.JPG">
+  		</div>
+  		<div class="column">
+    		<img src="IMG_0150.JPG">
+    		<img src="IMG_0011 2.JPG">
+    		<img src="IMG_1027.JPG">
+    		<img src="DSC_0413_Original 2.jpg">
+    		<img src="FullSizeRender.JPG">
+    		<img id = "last" src="DSC_0383_Original.jpg">
+  		</div>
+	</div>
+</body>
+</html>
