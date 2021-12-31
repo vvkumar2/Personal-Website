@@ -12,24 +12,41 @@
 	html {
 		background-color: #f4ece6;
 	}
-	h1 {
-		font-size: 30px;
-		text-align: center;
-		color: #1c2e56;
-		display: block;
-		margin: 0px;
-		font-family: 'Montserrat';
-	}
+	
 	body {
-		color:  whitesmoke;
+		color:  #f4ece6;
 		margin: 0;
 		padding: 0;
+	}
+	h1 {
+		font-size: 40px;
+		text-align: center;
+		color: #f4ece6;
+		font-family: 'Montserrat';
+	}
+	h2 {
+		font-size: 28px;
+		text-align: center;
+		color: #f4ece6;
+		font-family: 'Montserrat';
+	}
+	h3 {
+		font-size: 22px;
+		text-align: center;
+		color: #f4ece6;
+		font-family: 'Montserrat';
 	}
 	.text1 {
 		position: absolute;
 		z-index: 1;
 		top: 35px;
   		left: 45px;
+  		font-size: 30px;
+		text-align: center;
+		color: #1c2e56;
+		display: block;
+		margin: 0px;
+		font-family: 'Montserrat';
 	}
 	.text1 a, .text1 a:link, .text1 a:visited, .text1 a:focus, .text1 a:hover, .text1 a:active {
 		text-decoration: none;
@@ -48,8 +65,14 @@
 		text-decoration: none;
 		color: #1c2e56;
 		cursor: pointer;
-	}/*
-	.headerBox {
+	}
+	.footerIcons {
+		position: absolute;
+		top: 71px;
+		left: 640px;
+		opacity: 90%;
+	}
+	/*.headerBox {
 		width: 1440px;
 		height: 60px;
 		z-index: -1;
@@ -59,54 +82,28 @@
   		left: 0px;
   		padding: 0px;
   		margin: 0px;
-  		border-bottom: 1px solid #fdf2e0;
 	}*/
-	.bio1 {
-		color: #1c2e56;
-		font-family: 'Montserrat';
-		font-size: 70px;
-		position:relative;
-		width: 700px;
-		line-height: 75px;
-		top: 280px;
-		left: 665px;
+	.box {
+		position: relative;
+		width: 1440px;
+		height: 400px;
+		top: 200px;
+		left:  0px;
+		background-color: #1c2e56;
+		opacity: 90%;
+
 	}
-	.bio {
-		color: #1c2e56;
-		font-family: 'Montserrat';
-		font-size: 45px;
-		position:relative;
-		width: 700px;
-		line-height: 75px;
-		top: 330px;
-		left: 665px;
-	}
-	.footerBox {
-		width: 170px;
-		height: 35px;
+	/*.footerBox {
+		width: 1440px;
+		height: 20px;
 		z-index: -1;
-  		background-color: #f4ece6;
-  		/*border: 1px solid #1c2e56;*/
-  		position: absolute;
-  		bottom:  0px;
-  		left: 635px;
+  		background-color: #1c2e56;
+  		position: relative;
+  		top:  720px;
+  		left: 0px;
   		padding: 0px;
   		margin: 0px;
-	}
-	.footerIcons {
-		position: absolute;
-		top: 71px;
-		left: 640px;
-		opacity: 90%;
-	}
-	.headerLine {
-		position: absolute;
-		width: 770px;
-		height: 0px;
-		border-bottom: 1px solid #1c2e56;
-		top: 370px;
-		left: 670px;
-	}
+	}*/
 	</style>
 	
 </head>
@@ -121,28 +118,28 @@
 		<!-- <h2 class = "header" style = "left: 842px;"> | </h2> -->
 		<h2 class = "header" style = "left: 840px;"><a href="index_contactme.html">Contact</a></h2>
 	</div>
-	<div class = "headerBox"></div>
-
-	<div>
-		<img src="IMG_0497 4.JPG" width="530px" style="position:absolute; bottom:  0px; left: 70px; opacity: 93%;">
-	</div>
-	<div class="headerLine"></div>
-
-	<div class = "bio1">Hello</div>
-	<div class = "bio">I'm a first-year college student studying Computer Science at the University of California-- Los Angeles</div>
-
-
-	<div class = "footerBox"></div>
 	<div class = "footerIcons">
 		<a href="https://www.instagram.com/vrn_kmr/" target="_blank">
 			<img src="instagram_logo.png" height="25px" width="25px" style="position:absolute; bottom: 0px; left: 745px;">
 		</a>
 		<a href="https://www.linkedin.com/in/varunkumar5/" target="_blank">
-			<img src="linkedin_logo.png" height="25.8px" width="25.8px" style="position:absolute; bottom: 0px; left: 701px;">
+			<img src="linkedin_logo.png"  height="25.8px" width="25.8px" style="position:absolute; bottom: 0px; left: 701px;">
 		</a>
 		<a href="https://github.com/vvkumar2" target="_blank">
 			<img src="github_logo.png" height="25px" width="25px" style="position:absolute; bottom: 0px; left: 660px;">
 		</a>
 	</div>
+	<div class = "headerBox"></div>
+	<div class = "footerBox"></div>
+
+	<div class = "box">
+		<br> <br>
+		<h1>Contact Me.</h1>
+		<h2>Varun Kumar</h2>
+		<br>
+		<h3>Phone: 716 364 5607</h3>
+		<h3>E-Mail: vkumar23@icloud.com</h4>
+	</div>
+
 </body>
 </html>

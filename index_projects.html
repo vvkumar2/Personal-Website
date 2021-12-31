@@ -1,0 +1,603 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PRACTICE</title>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<style type="text/css">
+	*{
+		box-sizing: border-box;
+	}
+	html {
+		background-color: #f4ece6;
+	}
+	.text { 
+		position: relative;
+		top: 90px;
+		left: 40px;
+	}
+	.text h1 {
+		text-decoration: underline;
+		color: #1c2e56;
+		font-family: 'Montserrat';
+		font-size: 30px;
+		padding-bottom: 0px;
+		margin: 0px;
+	}
+	.text h2 {
+		color: #1c2e56;
+		font-family: 'Montserrat';
+		font-size: 22px;
+		padding-bottom: 1px;
+		padding-top: 5px;
+		margin: 0px;
+
+	}
+	.text h3 {
+		color: #1c2e56;
+		font-family: 'Montserrat';
+		font-size: 22px;
+		padding-bottom: 0px;
+		margin: 0px;
+	}
+
+	.text ul {
+		clear: both;
+		color: #1c2e56;
+		font-family: 'Montserrat';
+		font-size: 15px;
+		padding-bottom: 15px;
+		padding-top: 15px;
+		margin: 0px;
+	}
+	.text li {
+		padding-bottom: 8px;
+	}
+	body {
+		color:  #f4ece6;
+		margin: 0;
+		padding: 0;
+	}
+	.text a {
+		color: #1c2e56;
+		font-family: 'Montserrat';
+		font-size: 22px;
+		margin: 0px;
+
+	}
+	.text a, .text a:link, .text a:visited, .text a:focus, .text a:active {
+		text-decoration: none;
+		cursor: pointer;
+	}
+	.text a:hover {
+		text-decoration: underline;
+	}
+	.text1 {
+		position: absolute;
+		z-index: 1;
+		top: 35px;
+  		left: 45px;
+  		font-size: 30px;
+		text-align: center;
+		color: #1c2e56;
+		display: block;
+		margin: 0px;
+		font-family: 'Montserrat';
+	}
+	.text1 a, .text1 a:link, .text1 a:visited, .text1 a:focus, .text1 a:hover, .text1 a:active {
+		text-decoration: none;
+		color: #1c2e56;
+		cursor: pointer;
+	}
+	.header {
+		float: left;
+		font-size: 13px;
+		position:absolute;
+		color: #1c2e56;
+		font-family: 'Montserrat';
+		top: 37px;
+	}
+	.header a, .header a:link, .header a:visited, .header a:focus, .header a:hover, .header a:active {
+		text-decoration: none;
+		color: #1c2e56;
+		cursor: pointer;
+	}
+	.footerIcons {
+		position: absolute;
+		top: 71px;
+		left: 640px;
+		opacity: 85%;
+	}
+	/*.headerBox {
+		width: 1440px;
+		height: 60px;
+		z-index: -1;
+  		background-color: none;
+  		position: relative;
+  		top:  0px;
+  		left: 0px;
+  		padding: 0px;
+  		margin: 0px;
+  		border-bottom: 2px solid #1c2e56;
+	}*/
+	.headerBox {
+		float left;
+		width: 1200px;
+		height: 40px;
+		z-index: -1;
+		align-content: center;
+  		background-color: none;
+  		position: relative;
+  		top:  130px;
+  		left: 120px;
+  		padding: 0px;
+  		margin: 0px;
+  		border-bottom: 1px solid #1c2e56;
+  		margin-bottom: 20px;
+  		color: #1c2e56;
+		font-family: 'Montserrat';
+		font-size: 22px;
+		padding-bottom: 1px;
+		padding-top: 5px;
+		margin: 0px;
+		text-align: center;
+	}
+	#headerLineText1 {
+		position: absolute;
+		top:  -10px;
+	}
+	.pdfDownload{
+		font-size: 20px;
+		position:absolute;
+		color: #1c2e56;
+		font-family: 'Montserrat';
+		right:  123px;
+		top:  127px;
+	}
+	.pdfDownload a, .pdfDownload a:link, .pdfDownload a:visited, .pdfDownload a:focus, .pdfDownload a:active {
+		text-decoration: none;
+		cursor: pointer;
+		color: #1c2e56;
+	}
+	.pdfDownload a:hover {
+		text-decoration: underline;
+	}
+	.projects {
+		position:relative;
+		color: #1c2e56;
+		font-family: 'Montserrat';
+		top:  100px;
+		left: 220px;
+		margin-bottom: 100px;
+	}
+	.proj1 {
+		opacity: 78%;
+		background-color: whitesmoke;
+		height: 340px;
+		width: 1000px;
+		box-shadow: -.5px .5px 15px gray;
+	}
+	.proj2 {
+		opacity: 78%;
+		background-color: whitesmoke;
+		height: 360px;
+		width: 1000px;
+		box-shadow: -.5px .5px 15px gray;
+	}
+	.proj3 {
+		opacity: 78%;
+		background-color: whitesmoke;
+		height: 260px;
+		width: 1000px;
+		box-shadow: -.5px .5px 15px gray;
+	}
+
+	.proj3 h2{
+		font-size: 30px;
+		position: relative;
+		left:  50px;
+		top:  45px;
+		color:  #3252dc;
+	}
+	.proj3 h3{
+		font-size: 23px;
+		position: relative;
+		left:  50px;
+		top:  25px;
+	}
+	.proj3 h4 {
+		font-size: 18px;
+		position: relative;
+		left:  50px;
+		top:  55px;
+	}
+	.proj3 ul {
+		position: relative;
+		width:  450px;
+		font-size: 15px;
+		line-height: 30px;
+		left:  500px;
+		bottom: 110px;
+		margin: 0px;
+	}
+	.proj1 h2 {
+		font-size: 30px;
+		position: relative;
+		left:  50px;
+		top:  85px;
+		color:  #3252dc;
+	}
+	.proj1 h3 {
+		font-size: 23px;
+		position: relative;
+		left:  50px;
+		top:  65px;
+	}
+	.proj1 h4 {
+		font-size: 18px;
+		position: relative;
+		left:  50px;
+		top:  95px;
+		width: 500px;
+	}
+	.proj1 ul {
+		position: relative;
+		width:  450px;
+		font-size: 15px;
+		line-height: 30px;
+		left:  500px;
+		bottom: 120px;
+		margin: 0px;
+	}
+	.proj2 h2 {
+		font-size: 30px;
+		position: relative;
+		left:  50px;
+		top:  65px;
+		color:  #3252dc;
+	}
+	.proj2 h3 {
+		font-size: 23px;
+		position: relative;
+		left:  50px;
+		top:  45px;
+	}
+	.proj2 h4 {
+		font-size: 18px;
+		position: relative;
+		left:  50px;
+		top:  75px;
+		width: 400px;
+		margin: 15px 0px 15px 0px;
+	}
+	.proj2 ul {
+		position: relative;
+		width:  450px;
+		font-size: 15px;
+		line-height: 30px;
+		left:  500px;
+		bottom: 170px;
+		margin: 0px;
+	}
+	.projects a, .projects a:link, .projects a:visited, .projects a:focus, .projects a:active {
+		text-decoration: none;
+		cursor: pointer;
+		color: #1c2e56;
+	}
+	.projects a:hover {
+		text-decoration: underline;
+	}
+	.work {
+		position:relative;
+		color: #1c2e56;
+		font-family: 'Montserrat';
+		top:  100px;
+		left: 220px;
+		margin-bottom: 100px;
+	}
+	.work1 {
+		opacity: 78%;
+		background-color: whitesmoke;
+		height: 400px;
+		width: 1000px;
+		box-shadow: -.5px .5px 15px gray;
+	}
+	.work2 {
+		opacity: 78%;
+		background-color: whitesmoke;
+		height: 320px;
+		width: 1000px;
+		box-shadow: -.5px .5px 15px gray;
+	}
+	.work1 h2{
+		font-size: 30px;
+		position: relative;
+		left:  50px;
+		top:  85px;
+		color:  #3252dc;
+	}
+	.work1 h3{
+		font-size: 20px;
+		position: relative;
+		left:  50px;
+		top:  65px;
+	}
+	.work1 h4 {
+		font-size: 18px;
+		position: relative;
+		left:  50px;
+		top:  95px;
+	}
+	.work1 ul {
+		position: relative;
+		width:  450px;
+		font-size: 15px;
+		line-height: 30px;
+		left:  500px;
+		bottom: 150px;
+		margin: 0px;
+	}
+	.work2 h2 {
+		font-size: 30px;
+		position: relative;
+		left:  50px;
+		top:  65px;
+		color:  #3252dc;
+	}
+	.work2 h3 {
+		font-size: 23px;
+		position: relative;
+		left:  50px;
+		top:  45px;
+	}
+	.work2 h4 {
+		font-size: 18px;
+		position: relative;
+		left:  50px;
+		top:  75px;
+		width: 500px;
+	}
+	.work2 ul {
+		position: relative;
+		width:  450px;
+		font-size: 15px;
+		line-height: 30px;
+		left:  500px;
+		bottom: 140px;
+		margin: 0px;
+	}
+	.other {
+		position:relative;
+		color: #1c2e56;
+		font-family: 'Montserrat';
+		top:  100px;
+		left: 220px;
+		margin-bottom: 100px;
+		padding-bottom: 20px;
+	}
+	.other1 {
+		opacity: 78%;
+		background-color: whitesmoke;
+		height: 330px;
+		width: 1000px;
+		box-shadow: -.5px .5px 15px gray;
+
+	}
+	.other1 h2{
+		width: 400px;
+		font-size: 30px;
+		position: relative;
+		left:  50px;
+		top:  65px;
+		color:  #3252dc;
+
+	}
+	.other1 h3{
+		font-size: 20px;
+		position: relative;
+		left:  50px;
+		top:  45px;
+	}
+	.other1 h4 {
+		font-size: 18px;
+		position: relative;
+		left:  50px;
+		top:  75px;
+	}
+	.other1 ul {
+		position: relative;
+		width:  450px;
+		font-size: 15px;
+		line-height: 30px;
+		left:  500px;
+		bottom: 190px;
+		margin: 0px;
+	}
+	/*.footerBox {
+		width: 1440px;
+		height: 20px;
+		z-index: -1;
+  		background-color: #1c2e56;
+  		position: relative;
+  		top:  720px;
+  		left: 0px;
+  		padding: 0px;
+  		margin: 0px;
+	}*/
+	.skills {
+		position:relative;
+		color: #1c2e56;
+		font-family: 'Montserrat';
+		top:  100px;
+		left: 220px;
+		margin-bottom: 100px;
+		padding-bottom: 20px;
+	}
+	.skills1 {
+		opacity: 78%;
+		background-color: whitesmoke;
+		height: 280px;
+		width: 1000px;
+		box-shadow: -.5px .5px 15px gray;
+	}
+	.skills1 h2 {
+		float:  left;
+		width: 50%;
+	}
+	#s1 {
+		position: absolute;
+		left:  50px;
+	}
+	#s2 {
+		position: absolute;
+		left:  550px;
+	}
+	.skills1 p {
+		color:  #3252dc;
+	}
+	.skills1 ul {
+		font-size: 20px;
+		line-height: 35px;
+	}
+	</style>
+	
+</head>
+<body>
+	<h1 class = "text1"><a href = "index.html">Varun Kumar</a></h1>
+	<div>
+		<h2 class = "header" style = "left: 549px;"><a href="index_projects.html">Resume</a></h2>
+		<!-- <h2 class = "header" style = "left: 623px;"> | </h2> -->
+		<h2 class = "header" style = "left: 633px;"><a href="index_photography.html">Photography</a></h2>
+		<!-- <h2 class = "header" style = "left: 742px;"> | </h2> -->
+		<h2 class = "header" style = "left: 755px;"><a href="index.html">---------</a></h2>
+		<!-- <h2 class = "header" style = "left: 842px;"> | </h2> -->
+		<h2 class = "header" style = "left: 840px;"><a href="index_contactme.html">Contact</a></h2>
+	</div>
+	<div class = "headerBox">
+		<p id = "headerLineText1">Resume</p>
+	</div>
+	<h2 class="pdfDownload"><a href="VK RESUME.pdf" target="_blank">Download PDF</a></h2>
+	<div class = "footerBox"></div>
+	<div class = "footerIcons">
+		<a href="https://www.instagram.com/vrn_kmr/" target="_blank">
+			<img src="instagram_logo.png" height="25px" width="25px" style="position:absolute; bottom: 0px; left: 745px;">
+		</a>
+		<a href="https://www.linkedin.com/in/varunkumar5/" target="_blank">
+			<img src="linkedin_logo.png" height="25.8px" width="25.8px" style="position:absolute; bottom: 0px; left: 701px;">
+		</a>
+		<a href="https://github.com/vvkumar2" target="_blank">
+			<img src="github_logo.png" height="25px" width="25px" style="position:absolute; bottom: 0px; left: 660px;">
+		</a>
+	</div>
+	<br><br><br>
+	<div class = "projects">
+		<h1>Projects</h1>
+		<div class = proj3>
+			<h2>HTML/CSS/JavaScript</h2>
+			<h3><a href="https://github.com/vvkumar2/Personal-website" target="_blank">Personal Website</a></h3>
+			<h4>2021</h4>
+			<p>
+				<ul>
+					<li>Enrolled in Johns Hopkins University’s Coursera HTML/CSS/JavasScript course.</li>
+					<li>Applied newly learned skills to build a personal website.</li>
+					<li>Describes projects I have created, books I enjoy, and photos I have taken.</li>
+				</ul>
+			</p>
+		</div>
+		<div class = proj1>
+			<h2>Java</h2>
+			<h3><a href="https://github.com/vvkumar2/hsws" target="_blank">Human Resources Database</a></h3>
+			<h4>2020</h4>
+			<p>
+				<ul>
+					<li>Designed Java program that reads user input to construct a database containing information about a company’s employees, salaries, levels of hierarchy, etc. </li>
+					<li>Implemented a password protection system allowing only authorized users to view/edit the database.</li>
+					<li>Established a commission calculator based on the company’s selected rate and an employee’s sales.</li>
+					<li>Data saved in a TXT file.</li>
+				</ul>
+			</p>
+		</div>
+		<div class = proj2>
+			<h2>R</h2>
+			<h3><a href="https://github.com/vvkumar2/hsws" target="_blank">Car Body Alloy Comparison</a></h3>
+			<h4>University at Buffalo: Center for Computational Research </h4>
+			<h4>2018</h4>
+			<p>
+				<ul>
+					<li>Learned and used statistical programming language R to form, sort, organize data. </li>
+					<li>Gained experience in R’s syntax, basic functions, types of data.</li>
+					<li>Applied skills in a research project to determine most effective alloy for a car body in order to optimize mileage, weight, safety, price.</li>
+					<li>Presented conclusions at a seminar at the University at Buffalo.</li>
+					</ul>
+			</p>
+		</div>
+	</div>
+	<div class = "work">
+		<h1>Work Experience</h1>
+		<div class = work1>
+			<h2>You First Services, Inc.</h2>
+			<h3>Engineering/Digital Marketing Intern</h3>
+			<h4>July 2020 - November 2020</h4>
+			<h4>Buffalo, NY</h4>
+			<p>
+				<ul>
+					<li>Constructed WordPress websites and location-specific FaceBook Advertisements that display stores carrying our products in a 50-mile radius from the user .</li>
+					<li>Learned and utilized HTML to install WordPress plugins.</li>
+					<li>Collaborated with five engineers to build infection control products that employ hydrogen peroxide gas plasma techonology.</li>
+					<li>Utilized Microsoft Word and Excel to produce necessary documents used in development process, including a Manufacturing Record and Gantt Charts.</li>
+				</ul>
+			</p>
+		</div>
+		<div class = work2>
+			<h2>Kumon Learning Center</h2>
+			<h3>Math and English Tutor</h3>
+			<h4>April 2019 - November 2019</h4>
+			<h4>Williamsville, NY</h4>
+			<p>
+				<ul>
+					<li>Tutored children ranging from kindergarten to high school in math and reading. </li>
+					<li>Graded children's classwork and homework; provided them with detailed fedback and advice.</li>
+					<li>Gained useful experience in a work environment; enhanced communication skills.</li>
+				</ul>
+			</p>
+		</div>
+	</div>
+	<div class = "other">
+		<h1>Other</h1>
+		<div class = other1>
+			<h2>Gifted Math Program: University at Buffalo</h2>
+			<h3>Ambassador and Student</h3>
+			<h4>September 2015 - May 2021</h4>
+			<h4>Buffalo, NY</h4>
+			<p>
+				<ul>
+					<li>Enrolled in college mathematics courses; earned 22 credits in 6 years.</li>
+					<li>Developed strong communication, time management, and problem solving skills.</li>
+					<li>Provided tutoring to first-year students on college-level mathematics subjects once per week.</li>
+					<li>Collaborited with students to organize the UB Math 45th Anniversary and Pi Day Celebrations.</li>
+				</ul>
+			</p>
+		</div>
+	</div>
+	<div class = "skills">
+		<h1>Skills</h1>
+		<div class = skills1>
+			<h2 id = "s1"><p>Programming Languages</p>
+				<ul>
+					<li>Java</li>
+					<li>C++</li>
+					<li>R</li>
+					<li>HTML/CSS</li>
+				</ul>
+				</h2>
+			<h2 id = "s2"><p>Other</p>
+				<ul>
+					<li>Microsoft Suite</li>
+					<li>WordPress</li>
+				</ul>
+			</h2>
+		</div>
+	</div>
+</body>
+</html>
