@@ -3,7 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>PRACTICE</title>
+	<title>Photography</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 	<style type="text/css">
 	*{
@@ -25,78 +26,26 @@
 		font-weight: 600;
 	}
 	body {
-		color:  whitesmoke;
+		color:  #f4ece6 !important;
 		margin: 0;
 		padding: 0;
 	}
-	.text1 {
-		position: absolute;
-		z-index: 1;
-		top: 35px;
-  		left: 45px;
-  		font-size: 30px;
-		text-align: center;
-		color: #1c2e56;
-		display: block;
-		margin: 0px;
-		font-family: 'Montserrat';
-	}
-	.text1 a, .text1 a:link, .text1 a:visited, .text1 a:focus, .text1 a:hover, .text1 a:active {
-		text-decoration: none;
-		color: #1c2e56;
-		cursor: pointer;
-	}
-	.header {
-		float: left;
-		font-size: 13px;
-		position:absolute;
-		color: #1c2e56;
-		font-family: 'Montserrat';
-		top: 37px;
-	}
-	.header a, .header a:link, .header a:visited, .header a:focus, .header a:hover, .header a:active {
-		text-decoration: none;
-		color: #1c2e56;
-		cursor: pointer;
-	}
-	.footerIcons {
-		position: absolute;
-		top: 71px;
-		left: 640px;
-		opacity: 90%;
-	}
-	/*.headerBox {
-		width: 1440px;
-		height: 60px;
-		z-index: -1;
-  		background-color: #1c2e56;
-  		position: relative;
-  		top:  0px;
-  		left: 0px;
-  		padding: 0px;
-  		margin: 0px;
-  		border-bottom: 1px solid #E0E0DA;
-	}*/
 	.headerBox {
-		width: 1200px;
-		height: 40px;
-		z-index: -1;
+		display: flex;
+		flex-wrap: nowrap;
+		flex: 50%;
+		max-width: 54.167%;
 		align-content: center;
-  		background-color: none;
-  		position: relative;
-  		top:  140px;
-  		left: 660px;
-  		padding: 0px;
-  		margin: 0px;
-  		margin-bottom: 20px;
-  		border-bottom: 1px solid #1c2e56;
+		border-bottom: 1px solid #1c2e56;
   		color: #1c2e56;
 		font-family: 'Montserrat';
 		font-size: 22px;
-		padding-bottom: 1px;
-		padding-top: 5px;
-		margin: 0px;
-		text-align: left;
+		background-color: none;
+		opacity: 90%;
+		position: relative;
+		top:  140px;
+		left: 45.833%;
+
 	}
 	.photoHeader {
 		margin-bottom: 25px;
@@ -145,29 +94,124 @@
 	    max-width: 100%;
 	  }
 	}
+	.footerIcons {
+		display: flex;
+		flex-wrap: nowrap;
+		flex:  100%;
+		position: absolute;
+		right:  12%;
+		top: 63px;
+	}
+	@media screen and (max-width: 991px) {
+	  .footerIcons {
+	   	position: absolute;
+		left: 3.125%;
+		top: 90px;
+	  }
+	}
+	#icon1 {
+		position: absolute;
+		right: 0px !important;
+		left:  0px;
+		bottom:  -11px;
+	}
+	#icon2 {
+		position: absolute;
+		right: 0px !important;
+		left:  40px;
+		bottom:  -10.5px;
+	}
+	#icon3 {
+		position: absolute;
+		right: 0px !important;
+		left:  85px;
+		bottom:  -11px;
+	}
+	.heading1 {
+		font-size: 30px;
+		color: #1c2e56 !important;
+		font-family: 'Montserrat';
+		font-weight: bold;
+		position: absolute;
+		margin:  0px;
+		top: 27px;
+		left: 3.125%;
+	}
+	.heading2 {
+		position: absolute;
+		top: 42px;
+		left:  38.194%;
+	}
+	.heading2 a{
+		font-size: 13px;
+		color: #1c2e56 !important;
+		font-family: 'Montserrat';
+		font-weight: bold;
+	}
+	.btn1 {
+		position: relative;
+		left:  80%;
+		top:  35px;
+	}
+	
+	@media screen and (max-width: 991px) {
+	  .heading2 {
+	   left: 80%;
+	   top:  80px;
+
+	  }
+	  .heading2 a {
+	  	font-size: 10px;
+	  }
+	}
+	@media screen and (max-width: 400px) {
+	  .heading2 {
+	   left: 79%;
+	   top:  80px;
+
+	  }
+	  .heading2 a {
+	  	font-size: 10px;
+	  }
+	}
+	@media screen and (max-width: 400px) {
+	  .heading2 {
+	   left: 79%;
+	   top:  80px;
+
+	  }
+	  .heading2 a {
+	  	font-size: 10px;
+	  }
+	}
+
 	</style>
 	
 </head>
 <body>
-	<h1 class = "text1"><a href = "index.html">Varun Kumar</a></h1>
-	<div>
-		<h2 class = "header" style = "left: 549px;"><a href="index_projects.html">Resume</a></h2>
-		<!-- <h2 class = "header" style = "left: 623px;"> | </h2> -->
-		<h2 class = "header" style = "left: 633px;"><a href="index_photography.html">Photography</a></h2>
-		<!-- <h2 class = "header" style = "left: 742px;"> | </h2> -->
-		<h2 class = "header" style = "left: 755px;"><a href="index.html">---------</a></h2>
-		<!-- <h2 class = "header" style = "left: 842px;"> | </h2> -->
-		<h2 class = "header" style = "left: 840px;"><a href="index_contactme.html">Contact</a></h2>
-	</div>
+	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: none;">
+  <a class="navbar-brand heading1" href="index.html">Varun Kumar</a>
+  <button class="navbar-toggler collpased btn1" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav heading2">
+      <a class="nav-item nav-link active" href="index_projects.html">Resume</a>
+      <a class="nav-item nav-link" href="index_photography.html">Photography</a>
+      <a class="nav-item nav-link" href="index.html">Blog</a>
+      <a class="nav-item nav-link" href="index_contactme.html">Contact</a>
+    </div>
+  </div>
+</nav>
 	<div class = "footerIcons">
 		<a href="https://www.instagram.com/vrn_kmr/" target="_blank">
-			<img src="instagram_logo.png" height="25px" width="25px" style="position:absolute; bottom: 0px; left: 745px;">
+			<img id="icon3" src="instagram_logo.png" height="25px" width="25px" style="position:absolute;">
 		</a>
 		<a href="https://www.linkedin.com/in/varunkumar5/" target="_blank">
-			<img src="linkedin_logo.png" height="25.8px" width="25.8px" style="position:absolute; bottom: 0px; left: 701px;">
+			<img id="icon2" src="linkedin_logo.png" height="25.8px" width="25.8px" style="position:absolute;">
 		</a>
 		<a href="https://github.com/vvkumar2" target="_blank">
-			<img src="github_logo.png" height="25px" width="25px" style="position:absolute; bottom: 0px; left: 660px;">
+			<img id="icon1" src="github_logo.png" height="25px" width="25px" style="position:absolute;">
 		</a>
 	</div>
 
@@ -248,5 +292,8 @@
     		<img id = "last" src="DSC_0383_Original.jpg"style="opacity: 85%;">
   		</div>
 	</div>
+
+	 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 </html>
